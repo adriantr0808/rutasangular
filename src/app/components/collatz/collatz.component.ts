@@ -28,6 +28,8 @@ export class CollatzComponent implements OnInit {
 
   conjeturaCollatz() {
     var num = this.numero;
+    this.collatz = [];
+    this.collatz.push(num);
     while (num != 1) {
       if (num % 2 == 0) {
         num = num / 2;
