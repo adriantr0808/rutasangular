@@ -1,0 +1,21 @@
+a {
+  margin: 3em;
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+a:hover {
+  background-color: black;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+h1 {
+  margin-bottom: 1em;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-numerodoble',
@@ -15,8 +15,12 @@ export class NumerodobleComponent implements OnInit {
   //EN ANGULAR, LOS OBJETOS INYECTADOS SE DENOMINAN
   //CON GUION BAJO
 
-  constructor(private _activeRoute: ActivatedRoute) {
+  constructor(private _activeRoute: ActivatedRoute, private _router: Router) {
 
+  }
+
+  redirect(num: number): void {
+    this._router.navigate(['/numerodoble', num]);
   }
 
   ngOnInit(): void {

@@ -1,0 +1,9 @@
+<div>
+  <h1>Elige un numero y se mostrara su conjetura de Collatz</h1>
+  <ul>
+    <li *ngFor='let n of aleatorios; let i = index'>
+      <a [routerLink]="['/collatz',n]">{{n}}</a>
+    </li>
+  </ul>
+
+</div>

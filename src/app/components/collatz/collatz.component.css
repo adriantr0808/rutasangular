@@ -1,0 +1,10 @@
+span {
+  margin: 1em;
+  padding: 1em;
+  background-color: lightsalmon;
+  border: 1px solid cornflowerblue;
+}
+
+div {
+  padding: 1em;
+}
